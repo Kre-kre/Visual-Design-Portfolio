@@ -125,6 +125,12 @@
       .preview-stage iframe { position: absolute; width: 100%; height: 100%; inset: 0; border: 0; }
       .preview-link { display: block; padding: 12px 16px; border-top: 1.5px solid var(--line); font: 500 10px var(--mono); text-transform: uppercase; transition: background .15s ease; }
       .preview-link:hover { background: var(--acid); }
+      .preview-card.featured { grid-column: 1 / -1; box-shadow: 9px 9px 0 var(--wine); }
+      .preview-card.featured .preview-meta { padding: 18px 20px; }
+      .preview-card.featured .preview-meta h3 { font-size: 27px; }
+      .preview-card.featured .preview-meta .featured-tag { color: var(--wine); }
+      .preview-card.featured .preview-stage { aspect-ratio: 16 / 9; }
+      .preview-card.featured .preview-link { padding: 14px 20px; }
 
       .contact { position: relative; overflow: hidden; padding-bottom: clamp(70px, 11vw, 160px); }
       .contact::after { content: "✦"; position: absolute; right: -12px; bottom: -86px; color: var(--paper-deep); font: 400 340px/1 var(--serif); z-index: -1; }
@@ -226,6 +232,11 @@
           </div>
         </div>
         <div class="work-grid" aria-label="Selected work previews">
+          <article class="preview-card featured">
+            <div class="preview-meta"><p class="featured-tag">01 / Visual study</p><h3>Longlegs — a visual study</h3></div>
+            <div class="preview-stage"><iframe loading="lazy" src="https://embed.figma.com/deck/VItkcbNoCXxQn8BBpQbZ8A/Untitled?node-id=19-124&amp;viewport=-12710%2C-31%2C0.49&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;embed-host=share" allowfullscreen="allowfullscreen" allow="fullscreen" title="Longlegs — a visual study"></iframe></div>
+            <a class="preview-link" href="https://www.figma.com/deck/VItkcbNoCXxQn8BBpQbZ8A/Untitled?node-id=19-124" target="_blank" rel="noreferrer">Open preview ↗</a>
+          </article>
             <article class="preview-card">
               <div class="preview-meta"><p>01 / Social media</p><h3>Startup event post</h3></div>
               <div class="preview-stage"><iframe loading="lazy" src="https://www.canva.com/design/DAHS2SyWwsA/dj0VbDNh0h0-_zGKB7yk0Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen" title="Locked inside a startup office — event post"></iframe></div>
